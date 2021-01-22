@@ -11,6 +11,7 @@ public class Task2 {
             if (y==0){
                 break;
             }
+
             double result = x/y;
             System.out.println(result);
         }
