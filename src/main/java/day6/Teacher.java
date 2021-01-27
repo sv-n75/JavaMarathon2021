@@ -3,7 +3,6 @@ package day6;
 import java.util.Random;
 
 public class Teacher {
-    Random random = new Random();
     private String name;
     private String subject;
 
@@ -22,6 +21,7 @@ public class Teacher {
 
     public void evaluate(Student student) {
         String s = null;
+        Random random = new Random();
         int value = random.nextInt(4) + 2;
         switch (value) {
             case 2:

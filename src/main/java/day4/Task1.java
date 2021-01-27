@@ -10,28 +10,28 @@ public class Task1 {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
         int [] numbers = new int[n];
-        int a = 0;
-        int b = 0;
-        int c = 0;
-        int d = 0;
+        int more8 = 0;
+        int equal1 = 0;
+        int even = 0;
+        int noEven = 0;
         int summa =0;
 
 
         for (int i = 0; i < n; i++){
             numbers[i] = random.nextInt(10);
-            if (numbers[i]>8) a++;
-            if (numbers[i] == 1) b++;
-            if (numbers[i]%2 == 0) c++;
-            else d++;
+            if (numbers[i]>8) more8++;
+            if (numbers[i] == 1) equal1++;
+            if (numbers[i]%2 == 0) even++;
+            else noEven++;
             summa +=numbers[i];
         }
 
         System.out.println(Arrays.toString(numbers));
         System.out.println("Длина массива: " + n);
-        System.out.println("Количество чисел больше 8: " + a);
-        System.out.println("Количество чисел равных 1: " + b);
-        System.out.println("Количество четных чисел: " + c);
-        System.out.println("Количество нечетных чисел: " + d);
+        System.out.println("Количество чисел больше 8: " + more8);
+        System.out.println("Количество чисел равных 1: " + equal1);
+        System.out.println("Количество четных чисел: " + even);
+        System.out.println("Количество нечетных чисел: " + noEven);
         System.out.println("Сумма всех элементов массива: " + summa);
 
     }

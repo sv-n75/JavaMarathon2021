@@ -11,8 +11,8 @@ public class Task3 {
         int index = 0;
         Random random = new Random();
 
-        for (int i = 0; i < 12; i++){
-            for (int j = 0; j < 8; j++){
+        for (int i = 0; i < numbers.length; i++){
+            for (int j = 0; j < numbers[0].length; j++){
                 numbers[i][j] = random.nextInt(50);
                 summa[i] +=numbers[i][j];
             }

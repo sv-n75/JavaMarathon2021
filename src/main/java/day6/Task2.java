@@ -6,7 +6,7 @@ public class Task2 {
         airplane.setYear(1985);
         airplane.setLength(9);
         airplane.fillUp(30);
-        airplane.fillUp(40);
+        airplane.fillUp(50);
         airplane.info();
 
     }
