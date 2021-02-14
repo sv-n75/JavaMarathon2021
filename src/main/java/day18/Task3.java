@@ -7,6 +7,7 @@ public class Task3 {
         for (int x : numbers) {
             root.addRecursive(root, x);
         }
+
         root.dfs(root);
     }
 }

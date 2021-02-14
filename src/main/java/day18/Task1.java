@@ -21,4 +21,5 @@ public class Task1 {
 
         return numbers[n] + recursionSum(numbers, n - 1);
     }
+
 }

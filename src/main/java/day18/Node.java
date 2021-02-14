@@ -21,7 +21,6 @@ public class Node {
         } else  {
             current.right = addRecursive(current.right, value);
         }
-
         return current;
     }
 

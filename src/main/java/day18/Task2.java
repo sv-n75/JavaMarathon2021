@@ -9,8 +9,7 @@ public class Task2 {
 //            System.out.println(count7(717771237)); // 5
 //
 //*В числе 717771237 ровно 5 раз используется цифра семь.
-
-
+    
     public static void main(String[] args) {
         int n = 717771237;
         System.out.println(count7(n));
