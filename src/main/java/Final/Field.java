@@ -17,4 +17,5 @@ SHIP("\u26f5"), SHOT("\uD83D\uDCA5"), WATER("⬜"),//~
     public String getSymbol() {
         return symbol;
     }
+
 }

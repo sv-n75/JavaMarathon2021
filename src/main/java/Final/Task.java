@@ -18,7 +18,6 @@ public class Task {
         gameField2.printField();
 
         battleField1.playField(battleField1, battleField2, gameField1, gameField2);//запуск игры
-
     }
 }
 

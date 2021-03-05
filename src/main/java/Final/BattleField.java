@@ -129,7 +129,7 @@ public class BattleField {
                 }//кто то не двигается
 
                 if ((shipX[j + 1] - shipX[j]) != 1 && (shipY[j + 1] - shipY[j]) != 1) {//если не на 1
-                    System.out.println("координаты  кораблч не валидны");
+                    System.out.println("координаты  корабля не валидны");
                     return false;
                 }
             }
@@ -181,7 +181,6 @@ public class BattleField {
                 battleField[shipX[0] + 1][shipY[0] - 1] = 2;
             }
             return true;
-
         }
 
         if (shipX[0] != shipX[1]) {// при перемещении по х
