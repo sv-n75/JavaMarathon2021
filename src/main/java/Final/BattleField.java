@@ -116,15 +116,18 @@ public class BattleField {
 
         //сортируем массивы и проверяем 1 + 1 каждая коорд, 2 = 0
         if (i != 1) {
+
             Arrays.sort(shipX);
             Arrays.sort(shipY);
-            //    System.out.println(Arrays.toString(shipX));
-            //   System.out.println(Arrays.toString(shipY));
+//                System.out.println(Arrays.toString(shipX));
+//               System.out.println(Arrays.toString(shipY));
             for (int j = 0; j < i - 1; j++) {
-                if (shipX[j] != shipX[0] && shipY[j] != shipY[0]) {
+                if (shipX[j + 1] != shipX[j] && shipY[j + 1] != shipY[j]) {
+
                     System.out.println("координаты корабля не валидны ");
                     return false;
                 }//кто то не двигается
+
                 if ((shipX[j + 1] - shipX[j]) != 1 && (shipY[j + 1] - shipY[j]) != 1) {//если не на 1
                     System.out.println("координаты  кораблч не валидны");
                     return false;
@@ -373,7 +376,6 @@ public class BattleField {
                 if (z == 1) {
                     countShip2--;
                 } else countShip1--;
-
 
 
                 if (countShip1 == 0 || countShip2 == 0) {
